@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NUOVA OMH | Soluzioni Meccaniche di Alta Precisione</title>
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>NUOVA OMH | Modern Precision Manufacturing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,13 +12,13 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <h2>NUOVA OMH</h2>
+                <h2>NUOVA<span>OMH</span></h2>
             </div>
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#chi-siamo">Chi Siamo</a></li>
-                <li><a href="#lavorazioni">Lavorazioni</a></li>
-                <li><a href="#parco-macchine">Parco Macchine</a></li>
+                <li><a href="#lavorazioni">Servizi</a></li>
+                <li><a href="#parco-macchine">Macchine</a></li>
                 <li><a href="#formazione">Formazione</a></li>
                 <li><a href="#contatti">Contatti</a></li>
             </ul>
@@ -32,40 +32,43 @@
 
     <!-- Home Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
+        <div class="hero-grid">
+            <div class="hero-content">
                 <h1>Soluzioni Meccaniche di Alta Precisione e Consulenza Tecnica</h1>
                 <p>Qualità e Affidabilità – Made in Italy</p>
                 <a href="#contatti" class="cta-button">Richiedi un Preventivo</a>
             </div>
-            <div class="hero-image">
-                <div class="machine-placeholder"></div>
+            <div class="hero-visual">
+                <div class="machine-visualization"></div>
             </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scorri</span>
+            <div class="scroll-arrow"></div>
         </div>
     </section>
 
     <!-- Chi Siamo Section -->
     <section id="chi-siamo" class="about">
         <div class="container">
-            <h2>Chi Siamo</h2>
-            <div class="about-content">
-                <div class="about-text">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2>Chi Siamo</h2>
                     <p>Nuova OMH è una società specializzata nel settore della meccanica di precisione, con sede a Caramagna Piemonte, in provincia di Cuneo. Da anni operiamo nel campo del lavoro meccanico, offrendo soluzioni tecnologicamente avanzate e servizi di consulenza industriale.</p>
                     <p>La nostra esperienza pluriennale ci ha permesso di sviluppare competenze specifiche nella progettazione e realizzazione di componenti meccanici di alta precisione, garantendo qualità e affidabilità in ogni fase del processo produttivo.</p>
-                    <p>Il nostro approccio si basa sui principi di precisione, cura dei dettagli e rispetto delle tempistiche concordate, valori che rappresentano il fiore all'occhio della tradizione manifatturiera italiana.</p>
                 </div>
-                <div class="about-values">
-                    <div class="value-item">
-                        <h3>Precisione</h3>
-                        <p>Tolleranze micrometriche per ogni componente</p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>20+</h3>
+                        <p>Anni Esperienza</p>
                     </div>
-                    <div class="value-item">
-                        <h3>Esperienza</h3>
-                        <p>Oltre 20 anni nel settore meccanico</p>
+                    <div class="stat">
+                        <h3>500+</h3>
+                        <p>Clienti Soddisfatti</p>
                     </div>
-                    <div class="value-item">
-                        <h3>Qualità</h3>
-                        <p>Controllo totale del processo produttivo</p>
+                    <div class="stat">
+                        <h3>100%</h3>
+                        <p>Qualità Made in Italy</p>
                     </div>
                 </div>
             </div>
@@ -78,36 +81,52 @@
             <h2>Lavorazioni e Servizi</h2>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">⚙️</div>
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 3L2 12L5 12L5 20L19 20L19 12L22 12L12 3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 12L15 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
                     <h3>Lavorazioni CNC</h3>
-                    <ul class="service-list">
-                        <li>Tornitura CNC ad alta precisione</li>
-                        <li>Fresatura CNC 3, 4 e 5 assi</li>
-                        <li>Componenti meccanici in metallo</li>
-                        <li>Parti complesse su disegno</li>
-                    </ul>
+                    <div class="service-details">
+                        <p>Tornitura CNC ad alta precisione</p>
+                        <p>Fresatura CNC 3, 4 e 5 assi</p>
+                        <p>Componenti meccanici in metallo</p>
+                        <p>Parti complesse su disegno</p>
+                    </div>
                 </div>
                 
                 <div class="service-card">
-                    <div class="service-icon">📐</div>
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 22V15C9 14.4696 9.21071 13.9609 9.58579 13.5858C9.96086 13.2107 10.4696 13 11 13H13C13.5304 13 14.0391 13.2107 14.4142 13.5858C14.7893 13.9609 15 14.4696 15 15V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
                     <h3>Progettazione CAD/CAM</h3>
-                    <ul class="service-list">
-                        <li>Disegni tecnici meccanici</li>
-                        <li>Ottimizzazione processi produttivi</li>
-                        <li>Supporto dal design alla produzione</li>
-                        <li>Simulazioni e prototipazione</li>
-                    </ul>
+                    <div class="service-details">
+                        <p>Disegni tecnici meccanici</p>
+                        <p>Ottimizzazione processi produttivi</p>
+                        <p>Supporto dal design alla produzione</p>
+                        <p>Simulazioni e prototipazione</p>
+                    </div>
                 </div>
                 
                 <div class="service-card">
-                    <div class="service-icon">🔧</div>
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9.5 9H14.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M9.5 13H14.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
                     <h3>Consulenza Industriale</h3>
-                    <ul class="service-list">
-                        <li>Miglioramento processi produttivi</li>
-                        <li>Supporto a laboratori meccanici</li>
-                        <li>Ottimizzazione efficienza/qualità</li>
-                        <li>Formazione tecnica personale</li>
-                    </ul>
+                    <div class="service-details">
+                        <p>Miglioramento processi produttivi</p>
+                        <p>Supporto a laboratori meccanici</p>
+                        <p>Ottimizzazione efficienza/qualità</p>
+                        <p>Formazione tecnica personale</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -119,39 +138,35 @@
             <h2>Parco Macchine</h2>
             <div class="machines-grid">
                 <div class="machine-card">
-                    <div class="machine-img-placeholder"></div>
-                    <h3 class="mono-font">Centro di Lavoro CNC 5 Assi</h3>
-                    <p>Lavorazioni complesse ad alta precisione</p>
+                    <div class="machine-img"></div>
+                    <div class="machine-info">
+                        <h3>Centro di Lavoro CNC 5 Assi</h3>
+                        <p>Lavorazioni complesse ad alta precisione</p>
+                    </div>
                 </div>
                 
                 <div class="machine-card">
-                    <div class="machine-img-placeholder"></div>
-                    <h3 class="mono-font">Tornio CNC 2 Assi</h3>
-                    <p>Produzione serie e prototipi</p>
+                    <div class="machine-img"></div>
+                    <div class="machine-info">
+                        <h3>Tornio CNC 2 Assi</h3>
+                        <p>Produzione serie e prototipi</p>
+                    </div>
                 </div>
                 
                 <div class="machine-card">
-                    <div class="machine-img-placeholder"></div>
-                    <h3 class="mono-font">Fresatrice CNC Verticale</h3>
-                    <p>Componenti meccanici di precisione</p>
+                    <div class="machine-img"></div>
+                    <div class="machine-info">
+                        <h3>Fresatrice CNC Verticale</h3>
+                        <p>Componenti meccanici di precisione</p>
+                    </div>
                 </div>
                 
                 <div class="machine-card">
-                    <div class="machine-img-placeholder"></div>
-                    <h3 class="mono-font">Macchina Rettifica</h3>
-                    <p>Finiture superficiali estremamente precise</p>
-                </div>
-                
-                <div class="machine-card">
-                    <div class="machine-img-placeholder"></div>
-                    <h3 class="mono-font">Centro di Lavoro CNC 4 Assi</h3>
-                    <p>Geometrie complesse in un'unica lavorazione</p>
-                </div>
-                
-                <div class="machine-card">
-                    <div class="machine-img-placeholder"></div>
-                    <h3 class="mono-font">Tornio CNC Multiasse</h3>
-                    <p>Produttività massima per geometrie complesse</p>
+                    <div class="machine-img"></div>
+                    <div class="machine-info">
+                        <h3>Macchina Rettifica</h3>
+                        <p>Finiture superficiali estremamente precise</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -160,37 +175,29 @@
     <!-- Formazione e Tutoring Section -->
     <section id="formazione" class="training">
         <div class="container">
-            <h2>Formazione e Tutoring</h2>
-            <div class="training-content">
-                <div class="training-text">
-                    <h3>Competenza Tecnica al Vostro Servizio</h3>
+            <div class="training-grid">
+                <div class="training-content">
+                    <h2>Formazione e Tutoring</h2>
                     <p>Presso Nuova OMH crediamo che la conoscenza sia il vero motore dell'eccellenza. La nostra esperienza pluriennale nel settore delle lavorazioni meccaniche ci permette di offrire corsi di formazione e tutoring specializzato.</p>
                     
-                    <p>Garantiamo ai professionisti del settore:</p>
-                    <ul>
-                        <li>Formazione su software CAD/CAM avanzati</li>
-                        <li>Addestramento sull'utilizzo di macchine CNC</li>
-                        <li>Consulenza per l'ottimizzazione dei processi produttivi</li>
-                        <li>Affiancamento tecnico per lo sviluppo di nuovi progetti</li>
-                    </ul>
-                    
-                    <p>La nostra scuola pratica permette ai tecnici di acquisire competenze concrete direttamente sulle nostre macchine, in un ambiente reale di produzione.</p>
+                    <div class="training-list">
+                        <div class="training-item">
+                            <h4>Formazione CAD/CAM</h4>
+                            <p>Software avanzati per la progettazione e programmazione CNC</p>
+                        </div>
+                        <div class="training-item">
+                            <h4>Operazione CNC</h4>
+                            <p>Addestramento completo sull'utilizzo di macchine CNC</p>
+                        </div>
+                        <div class="training-item">
+                            <h4>Consulenza</h4>
+                            <p>Ottimizzazione dei processi produttivi</p>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="training-cert">
-                    <h3>Perché Sceglierci</h3>
-                    <div class="cert-item">
-                        <h4>Esperienza Reale</h4>
-                        <p>Formazione basata su casi reali e problematiche industriali concrete</p>
-                    </div>
-                    <div class="cert-item">
-                        <h4>Strumenti Avanzati</h4>
-                        <p>Accesso diretto a macchine CNC di ultima generazione</p>
-                    </div>
-                    <div class="cert-item">
-                        <h4>Approccio Pratico</h4>
-                        <p>Teoria applicata a scenari industriali reali</p>
-                    </div>
+                <div class="training-visual">
+                    <div class="training-graphic"></div>
                 </div>
             </div>
         </div>
@@ -199,9 +206,9 @@
     <!-- Contatti Section -->
     <section id="contatti" class="contact">
         <div class="container">
-            <h2>Contatti</h2>
-            <div class="contact-content">
+            <div class="contact-grid">
                 <div class="contact-info">
+                    <h2>Contatti</h2>
                     <div class="info-group">
                         <h3>Informazioni Aziendali</h3>
                         <p><strong>NUOVA OMH S.r.l.</strong></p>
@@ -210,7 +217,7 @@
                         <p><strong>Email:</strong> info@nuovamh.it</p>
                     </div>
                     
-                    <div class="map-placeholder">
+                    <div class="map-container">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2809.436736844248!2d7.389998315566525!3d44.58230997910233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478a5d1f0f0b5b5f%3A0x1b1f0f0b5b5f0f0b!2sCaramagna%20Piemonte%2C%20CN%2C%20Italy!5e0!3m2!1sen!2sus!4v1635555555555!5m2!1sen!2sus" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
@@ -218,14 +225,16 @@
                 <div class="contact-form">
                     <h3>Richiedi un Preventivo</h3>
                     <form id="quote-form">
-                        <div class="form-group">
-                            <label for="name">Nome *</label>
-                            <input type="text" id="name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="company">Azienda *</label>
-                            <input type="text" id="company" required>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nome *</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company">Azienda *</label>
+                                <input type="text" id="company" required>
+                            </div>
                         </div>
                         
                         <div class="form-group">
@@ -253,8 +262,21 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 NUOVA OMH S.r.l. - P.IVA 01234567890</p>
-            <p>Qualità e Affidabilità – Made in Italy</p>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>NUOVA<span>OMH</span></h3>
+                    <p>Qualità e Affidabilità – Made in Italy</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#chi-siamo">Chi Siamo</a>
+                    <a href="#lavorazioni">Servizi</a>
+                    <a href="#contatti">Contatti</a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2026 NUOVA OMH S.r.l. - P.IVA 01234567890</p>
+                </div>
+            </div>
         </div>
     </footer>
 

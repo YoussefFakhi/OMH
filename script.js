@@ -3,12 +3,14 @@ const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
 hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
 });
 
 // Close menu when clicking on a link
 document.querySelectorAll('.nav-menu a').forEach(link => {
     link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
         navMenu.classList.remove('active');
     });
 });
@@ -23,7 +25,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         
         if (targetElement) {
             window.scrollTo({
-                top: targetElement.offsetTop - 70,
+                top: targetElement.offsetTop - 80,
                 behavior: 'smooth'
             });
         }
@@ -51,7 +53,7 @@ document.getElementById('quote-form').addEventListener('submit', function(e) {
         return;
     }
     
-    // In a real implementation, you would send the form data to a server
+    // Show success message
     alert('Richiesta inviata con successo! Un nostro tecnico ti contatterà presto.');
     this.reset();
 });
@@ -67,17 +69,35 @@ document.addEventListener('DOMContentLoaded', function() {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.style.opacity = 1;
-                entry.target.style.transform = 'translateY(0)';
+                entry.target.classList.add('animated');
             }
         });
     }, observerOptions);
     
     // Observe elements to animate on scroll
-    document.querySelectorAll('.service-card, .machine-card, .value-item, .cert-item').forEach(el => {
-        el.style.opacity = 0;
-        el.style.transform = 'translateY(20px)';
-        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    document.querySelectorAll('.service-card, .machine-card, .stat, .training-item').forEach(el => {
+        el.classList.add('not-animated');
         observer.observe(el);
     });
+});
+
+// Add CSS for animations
+const style = document.createElement('style');
+style.textContent = `
+    .not-animated {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    
+    .animated {
+        opacity: 1;
+        transform: translateY(0);
+    }
+`;
+document.head.appendChild(style);
+
+// Hamburger animation
+document.querySelector('.hamburger').addEventListener('click', function() {
+    this.classList.toggle('active');
 });
